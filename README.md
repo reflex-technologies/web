@@ -14,3 +14,4 @@ Install Dependencies:
 1. `npm install react-router-dom`
 2. `npm install -D tailwindcss postcss autoprefixer`
 3. `npm install scroll-lock`
+4. `npm install react-just-parallax`
