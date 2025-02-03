@@ -122,7 +122,7 @@ import {
   ];
   
   export const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+    "Can insert more info here.";
   
   export const collabContent = [
     {
@@ -251,7 +251,6 @@ import {
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
-      light: true,
     },
     {
       id: "2",
@@ -268,7 +267,6 @@ import {
       backgroundUrl: "./src/assets/benefits/card-4.svg",
       iconUrl: benefitIcon4,
       imageUrl: benefitImage2,
-      light: true,
     },
     {
       id: "4",
