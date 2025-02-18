@@ -1,13 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/brainwave-symbol.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reflex Tech</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<link rel="stylesheet" href="src/css/main.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="./src/assets/brainwave-symbol.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflex Tech</title>
+</head>
+<script src="src/main.js"></script>
+
+<body class="ui-light-theme">
+  <!-- Header -->
+  <div class="header-main">
+    <img src="src/assets/logo-light.svg" height="35" />
+    <div class="tab-bar-div">
+      <button type="button" class="tab-bar-button tab-bar-active" onclick="clickTabbar(event, 'Home')">Home</button>
+      <button type="button" class="tab-bar-button" onclick="clickTabbar(event, 'Features')">Features</button>
+      <button type="button" class="tab-bar-button" onclick="clickTabbar(event, 'Why us')">Why us</button>
+    </div>
+    <button type="button">Join Now</button>
+  </div>
+  <div id="content">
+    <h2>
+      Unlock the Potential Within
+    </h2>
+    <a class="subtext" style="display: block; text-align: center; margin: 0 10vw;">
+      reflex is the first wearable designed for athletes to track muscle activation and fatigue in real-time, helping
+      you train smarter and recover faster.
+    </a>
+
+    <div style="height: 40vh;"></div>
+
+    <!-- Features -->
+    <div style="background: var(--ui-background-dim);">
+      <h2>
+        New Platform Features
+      </h2>
+      <br>
+      <div class="feature-img-container">
+        <div class="feature-img-tile">
+          <img src="src/assets/feature1.png">
+          <h4>Blah Blah Blah</h4>
+          <a class="subtext">No features here</a>
+        </div>
+        <!-- <img src="src/assets/feature1.png">
+        <img src="src/assets/feature1.png"> -->
+      </div>
+      <br>
+    </div>
+
+    <!-- Why you choose -->
+     <div style="display: flex; flex-direction: row; padding: 0 3% 20vh 3%;">
+      <img src="src/assets/feature1.png" style="max-width: 30%;">
+      <div style="padding: 0.25em;">
+        <h2>
+          Why you should choose Reflex?
+        </h2>
+        <a class="subtext" style="text-align: center; width:100%; display: block;">because we got what you need, boy!</a>
+      </div>
+
+     </div>
+
+
+    <div class="footer">
+
+    </div>
+  </div>
+</body>
+
 </html>
