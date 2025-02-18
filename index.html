@@ -4,25 +4,29 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="./src/assets/brainwave-symbol.svg" /> -->
+  <link rel="icon" href="/src/assets/icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reflex Tech</title>
 </head>
-<script src="src/main.js"></script>
 
 <body class="ui-light-theme">
   <!-- Header -->
   <div class="header-main">
-    <img src="src/assets/logo-light.svg" height="35" />
+    <picture>
+      <source media="(min-width: 550px)" srcset="src/assets/logo-light.svg" height="35" />
+      <img src="src/assets/icon.png" height="35" />
+
+    </picture>
     <div class="tab-bar-div">
-      <button type="button" class="tab-bar-button tab-bar-active" onclick="clickTabbar(event, 'Home')">Home</button>
-      <button type="button" class="tab-bar-button" onclick="clickTabbar(event, 'Features')">Features</button>
-      <button type="button" class="tab-bar-button" onclick="clickTabbar(event, 'Why us')">Why us</button>
+      <button type="button" class="tab-bar-button tab-bar-active"
+        onclick="clickTabbar(event.target, 'Home')">Home</button>
+      <button type="button" class="tab-bar-button" onclick="clickTabbar(event.target, 'Features')">Features</button>
+      <button type="button" class="tab-bar-button" onclick="clickTabbar(event.target, 'Why')">Why us</button>
     </div>
     <button type="button">Join Now</button>
   </div>
   <div id="content">
-    <h2>
+    <h2 id="Home">
       Unlock the Potential Within
     </h2>
     <a class="subtext" style="display: block; text-align: center; margin: 0 10vw;">
@@ -33,7 +37,7 @@
     <div style="height: 40vh;"></div>
 
     <!-- Features -->
-    <div style="background: var(--ui-background-dim);">
+    <div id="Features" style="background: var(--ui-background-dim);">
       <h2>
         New Platform Features
       </h2>
@@ -41,8 +45,8 @@
       <div class="feature-img-container">
         <div class="feature-img-tile">
           <img src="src/assets/feature1.png">
-          <h4>Blah Blah Blah</h4>
-          <a class="subtext">No features here</a>
+          <h4>Best Feature</h4>
+          <a class="subtext">Write feature descriptions here</a>
         </div>
         <!-- <img src="src/assets/feature1.png">
         <img src="src/assets/feature1.png"> -->
@@ -51,22 +55,26 @@
     </div>
 
     <!-- Why you choose -->
-     <div style="display: flex; flex-direction: row; padding: 0 3% 20vh 3%;">
+    <div id="Why" style="display: flex; flex-direction: row; align-items: center; padding: 10vh 3% 10vh 3%;">
       <img src="src/assets/feature1.png" style="max-width: 30%;">
       <div style="padding: 0.25em;">
-        <h2>
+        <h2 style="padding: 0;">
           Why you should choose Reflex?
         </h2>
-        <a class="subtext" style="text-align: center; width:100%; display: block;">because we got what you need, boy!</a>
+        <a class="subtext" style="text-align: center; width:100%; display: block;">because we got what you need, so you
+          will feel satifsfied with our performance.
+          boy!</a>
       </div>
 
-     </div>
+    </div>
 
 
     <div class="footer">
-
+      Thanks for checking out Reflex
+      <div class="separator"></div>
     </div>
   </div>
 </body>
+<script src="src/main.js"></script>
 
 </html>

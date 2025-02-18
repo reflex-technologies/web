@@ -2,10 +2,11 @@
     --ui-background: #252424;
     --ui-background-bright: #353535;
     --ui-background-dim: #181818;
-    --ui-primary: #c9fde4;
-    --ui-primary-dim:  #88e6b8;
-    --ui-on-primary: #100e11;
-    --ui-on-background: #f8f7f8;
+    --ui-primary: #06b0c2;
+    --ui-primary-dim: #18919e;
+    --ui-secondary: #102437;
+    --ui-on-primary: #f8f8f8;
+    --ui-on-background: #f8f8f8;
     --ui-on-background-dim: #bbb;
     --ui-accent: lightblue;
 }
@@ -14,11 +15,12 @@
     --ui-background: ghostwhite;
     --ui-background-bright: white;
     --ui-background-dim: #eaeaef;
-    --ui-primary: #c9fde4;
-    --ui-primary-dim: #88e6b8;
-    --ui-on-primary: #222;
+    --ui-primary: #06b0c2;
+    --ui-primary-dim: #18919e;
+    --ui-secondary: #102437;
+    --ui-on-primary: #f8f8f8;
     --ui-on-background: #222;
-    --ui-on-background-dim: #444; 
+    --ui-on-background-dim: #444;
     --ui-accent: teal;
 }
 
@@ -36,7 +38,7 @@ body {
 
     image-rendering: crisp-edges;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering:pixelated;
+    image-rendering: pixelated;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -66,7 +68,7 @@ button {
     border: none;
     border-radius: 100vmax;
     padding: 0.5rem 1rem;
-    height: 35px;
+    min-height: 35px;
 }
 
 button:hover {
@@ -101,7 +103,6 @@ h2 {
     align-items: center;
     border-radius: 100vmax;
     background-color: var(--ui-background-dim);
-    padding: 0.25rem;
     margin: 0.25rem;
     min-width: 100px;
 }
@@ -110,7 +111,8 @@ h2 {
     background: transparent;
     border: none;
     border-radius: 100vmax;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
+    margin: 0.25rem;
     color: var(--ui-on-background);
 }
 
@@ -151,8 +153,17 @@ h2 {
 }
 
 
+.separator {
+    margin: 2rem 1rem;
+    background-color: var(--ui-on-background-dim);
+    height: 1px;
+    width: calc(100% - 2rem);
+}
+
 
 .footer {
-    background: var(--ui-primary);
-    padding: 20vh;
+    background: var(--ui-secondary);
+    color: var(--ui-on-primary);
+    padding: 2rem 1rem;
+    min-height: 40vh;
 }
