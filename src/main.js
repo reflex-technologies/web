@@ -24,10 +24,9 @@ contentDiv.addEventListener('scroll', (event) => {
             ticking = false;
         });
 
-
         const rect = contentDiv.getBoundingClientRect();
         const maxY = rect.height - rect.top;
-        const progress = Math.min(2, Math.floor(3 * event.target.scrollTop / maxY));
+        const progress = Math.max(0, Math.min(2, Math.floor(3 * event.target.scrollTop / maxY)));
 
         clickTabbar(tabs[progress], tabTitles[progress], false);
 

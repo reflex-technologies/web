@@ -14,7 +14,7 @@
 .ui-light-theme {
     --ui-background: ghostwhite;
     --ui-background-bright: white;
-    --ui-background-dim: #eaeaef;
+    --ui-background-dim: #f0f0f0;
     --ui-primary: #06b0c2;
     --ui-primary-dim: #18919e;
     --ui-secondary: #102437;
@@ -33,6 +33,7 @@ body {
     width: 100%;
     background-color: var(--ui-background);
     position: fixed;
+    font-family: Helvetica, Arial, sans-serif;
 
     overscroll-behavior-y: contain;
 
@@ -68,7 +69,14 @@ button {
     border: none;
     border-radius: 100vmax;
     padding: 0.5rem 1rem;
+    margin: 0.2rem;
     min-height: 35px;
+}
+
+button:disabled {
+    background-color: var(--ui-primary-dim);
+    cursor: not-allowed;
+    color: var(--ui-on-background-dim);
 }
 
 button:hover {
@@ -78,9 +86,18 @@ button:hover {
 h2 {
     text-align: center;
     color: var(--ui-on-background);
-    font-size: 2rem;
+    font-size: 2.75rem;
+    letter-spacing: -1%;
     margin: 0;
     padding: 5rem 0 0 0;
+}
+
+input[type=text] {
+    background: transparent;
+    border: 1px solid var(--ui-on-background-dim);
+    border-radius: 100vmax;
+    color: var(--ui-on-primary);
+    padding: 0.5rem 2rem;
 }
 
 #content {
@@ -140,16 +157,27 @@ h2 {
 
 .feature-img-tile h4 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     margin: 0.25em 0;
 }
 
 
 
 .subtext {
+    display: block;
     color: var(--ui-on-background-dim);
     font-weight: 100;
     font-size: 0.9em;
+    max-width: 60vw;
+    text-overflow: ellipsis;
+}
+
+
+.subtext-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10vw;
 }
 
 
@@ -162,8 +190,17 @@ h2 {
 
 
 .footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content 1fr 1fr;
     background: var(--ui-secondary);
     color: var(--ui-on-primary);
     padding: 2rem 1rem;
     min-height: 40vh;
+}
+
+.email-input-wrapper {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
 }

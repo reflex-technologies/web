@@ -23,16 +23,20 @@
       <button type="button" class="tab-bar-button" onclick="clickTabbar(event.target, 'Features')">Features</button>
       <button type="button" class="tab-bar-button" onclick="clickTabbar(event.target, 'Why')">Why us</button>
     </div>
-    <button type="button">Join Now</button>
+    <button type="button"
+      onclick="document.getElementById('content').scrollTo(0, document.getElementById('content').scrollHeight);">Join
+      Now</button>
   </div>
   <div id="content">
     <h2 id="Home">
       Unlock the Potential Within
     </h2>
-    <a class="subtext" style="display: block; text-align: center; margin: 0 10vw;">
-      reflex is the first wearable designed for athletes to track muscle activation and fatigue in real-time, helping
-      you train smarter and recover faster.
-    </a>
+    <div class="subtext-wrapper">
+      <a class="subtext">
+        reflex is the first wearable designed for athletes to track muscle activation and fatigue in real-time, helping
+        you train smarter and recover faster.
+      </a>
+    </div>
 
     <div style="height: 40vh;"></div>
 
@@ -55,24 +59,32 @@
     </div>
 
     <!-- Why you choose -->
-    <div id="Why" style="display: flex; flex-direction: row; align-items: center; padding: 10vh 3% 10vh 3%;">
+    <div id="Why" style="display: flex; flex-direction: row; gap: 1rem; align-items: center; padding: 10vh 3% 10vh 3%;">
       <img src="src/assets/feature1.png" style="max-width: 30%;">
       <div style="padding: 0.25em;">
-        <h2 style="padding: 0;">
+        <h2 style="padding: 0; text-align: left;">
           Why you should choose Reflex?
         </h2>
-        <a class="subtext" style="text-align: center; width:100%; display: block;">because we got what you need, so you
-          will feel satifsfied with our performance.
-          boy!</a>
+        <a class="subtext">because we got what you need, so you
+          will feel satifsfied with our performance.</a>
       </div>
 
     </div>
 
 
     <div class="footer">
-      Thanks for checking out Reflex
-      <div class="separator"></div>
+      <h3>
+        Hey There,<br>Sign up to learn more!
+      </h3>
+      <div class="email-input-wrapper">
+        <input name="emailInput" id="emailInput" placeholder="Enter Your Email" type="text" />
+        <!-- <label for="emailInput">Join</label> -->
+        <button type="button" disabled>Coming soon</button>
+      </div>
+      <div class="separator" style="grid-column: 1 / 3;"></div>
+      <a class="subtext" style="color: var(--ui-on-primary);">Reflex Technologies</a>
     </div>
+
   </div>
 </body>
 <script src="src/main.js"></script>
