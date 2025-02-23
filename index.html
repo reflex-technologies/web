@@ -11,7 +11,7 @@
 
 <body class="ui-light-theme" id="content">
   <!-- Header -->
-  <div class="header-main">
+  <div id="mainHeader" class="header-main">
     <picture>
       <source media="(min-width: 550px)" srcset="src/assets/logo-light.svg" height="35" />
       <img src="src/assets/icon.svg" height="35" />
@@ -26,17 +26,20 @@
     <button type="button" onclick="document.body.scrollTo(0, document.body.scrollHeight);">Join
       Now</button>
   </div>
-  <h2 id="Home">
-    Unlock the Potential Within
-  </h2>
-  <div class="subtext-wrapper">
-    <a class="subtext">
-      reflex is the first wearable designed for athletes to track muscle activation and fatigue in real-time, helping
-      you train smarter and recover faster.
-    </a>
-  </div>
 
-  <div style="height: 40vh;"></div>
+  <!-- Home -->
+  <div class="home-wrapper">
+
+    <h2 id="Home">
+      Unlock the Potential Within
+    </h2>
+    <div class="subtext-wrapper">
+      <a class="subtext">
+        reflex is the first wearable designed for athletes to track muscle activation and fatigue in real-time, helping
+        you train smarter and recover faster.
+      </a>
+    </div>
+  </div>
 
   <!-- Features -->
   <div id="Features" style="background: var(--ui-background-dim);">
@@ -46,25 +49,47 @@
     <br>
     <div class="feature-img-container">
       <div class="feature-img-tile">
-        <img src="src/assets/feature1.png">
-        <h4>Trend Analysis</h4>
-        <a class="subtext">Write feature descriptions here</a>
+        <img src="src/assets/feature-1.png" loading="lazy">
+        <h4>Personalized Insights</h4>
+        <a class="subtext">Unlock a deeper understanding of your muscle activity with Personalized Insights. Reflex
+          analyzes your performance and adapts to your unique physiology, giving you tailored feedback to optimize every
+          workout. Whether you are looking to improve strength, endurance, or recovery, our data-driven approach helps
+          you train smarter, not harder</a>
       </div>
-      <!-- <img src="src/assets/feature1.png">
-        <img src="src/assets/feature1.png"> -->
+      <div class="feature-img-tile">
+        <img src="src/assets/feature-2.png" loading="lazy">
+        <h4>Real Time Feedback</h4>
+        <a class="subtext">Get instant feedback on your muscle activation as you train. With Reflex’s real-time
+          processing, you can see exactly how your muscles are performing during every rep, ensuring proper form and
+          maximizing efficiency. No more guesswork—just precise, actionable insights that keep you in control of your
+          training.</a>
+      </div>
+      <div class="feature-img-tile">
+        <img src="src/assets/feature-3.png" loading="lazy">
+        <h4>Trend Analysis</h4>
+        <a class="subtext">Track your progress over time with powerful Trend Analysis. Reflex monitors and visualizes
+          your muscle data, helping you identify patterns, measure improvements, and detect fatigue before it leads to
+          injury. Stay ahead of plateaus and make informed decisions based on real performance metrics.</a>
+      </div>
     </div>
     <br>
   </div>
 
   <!-- Why you choose -->
-  <div id="Why" style="display: flex; flex-direction: row; gap: 1rem; align-items: center; padding: 10vh 3% 10vh 3%;">
-    <img src="src/assets/feature1.png" style="max-width: 30%;">
+  <div id="Why" class="why-wrapper">
+    <img src="src/assets/web-model-1.png">
     <div style="padding: 0.25em;">
       <h2 style="padding: 0; text-align: left;">
         Why you should choose Reflex?
       </h2>
-      <a class="subtext">because we got what you need, so you
-        will feel satifsfied with our performance.</a>
+      <a class="subtext" style="margin: 2rem 0;">we give you the confidence to push your limits, the clarity to track
+        your progress, and the
+        control to train smarter every day.</a>
+      <div class="why-tile-wrapper">
+        <img src="src/assets/group-1.svg" loading="lazy">
+        <img src="src/assets/group-2.svg" loading="lazy">
+        <img src="src/assets/group-3.svg" loading="lazy">
+      </div>
     </div>
 
   </div>
@@ -77,15 +102,15 @@
     <div class="email-input-wrapper">
       <input name="emailInput" id="emailInput" placeholder="Enter Your Email" type="text" />
       <!-- <label for="emailInput">Join</label> -->
-      <button type="button" disabled>Coming soon</button>
+      <button type="button">Join Waistlist</button>
     </div>
     <div class="separator" style="grid-column: 1 / 3;"></div>
     <a style="max-width: 55vw; grid-column: 1 / 3;">
-      <img src="src/assets/logo-dark.svg" height="30" /><br>
+      <img src="src/assets/logo-dark.svg" height="30" /><br><br>
       At reflex, our mission is to make cutting-edge health technology accessible to everyone, everywhere
     </a>
     <div class="separator" style="grid-column: 1 / 3;"></div>
-    <a class="subtext" style="color: var(--ui-on-primary);">&#169; 2025 Reflex Technologies LLC</a>
+    <a class="subtext footer-text">&#169; 2025 Reflex Technologies LLC</a>
   </div>
 </body>
 <script src="src/main.js"></script>
