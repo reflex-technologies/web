@@ -1,6 +1,42 @@
 const tabs = document.getElementsByClassName('tab-bar-button');
 const mainHeader = document.getElementById('mainHeader');
 const tabTitles = ['Home', 'Features', 'Why'];
+let timer = null, index = 0;
+
+// Inersection Observer
+function initObservers() {
+    const whyTiles = document.getElementsByClassName('why-carousel-tile');
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            window.requestIdleCallback(() => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        timer = setInterval(() => {
+                            whyTiles[index].scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+                            index++;
+                            index %= whyTiles.length;
+                            console.log('next');
+                        }, 2000);
+                        console.log('shown')
+                    } else if (timer) {
+                        clearInterval(timer);
+                        timer = null;
+                        console.log('hidden');
+                    }
+                }
+                );
+            });
+        },
+        {
+            root: null,
+            threshold: 0.5,
+        }
+    );
+
+
+    observer.observe(document.getElementsByClassName('why-carousel')[0]);
+}
 
 
 function clickTabbar(target, name, scroll = true) {
@@ -39,4 +75,8 @@ document.body.addEventListener('scroll', (event) => {
         ticking = true;
     }
 
+});
+
+window.addEventListener('load', () => {
+    initObservers();
 });
