@@ -230,6 +230,7 @@ input[type=text] {
 }
 
 .why-wrapper {
+    overflow: clip;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -270,7 +271,11 @@ input[type=text] {
 }
 
 
-@media (max-width: 580px) {}
+@media (max-width: 580px) {
+    .why-wrapper {
+        flex-direction: column;
+    }
+}
 
 /* For hover-enabled devices only */
 @media (hover: hover) {

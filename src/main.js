@@ -9,7 +9,7 @@ function initObservers() {
 
     const observer = new IntersectionObserver(
         (entries, observer) => {
-            window.requestIdleCallback(() => {
+            const idleCallback = () => {
                 entries.forEach((e) => {
                     if (e.isIntersecting) {
                         timer = setInterval(() => {
@@ -18,15 +18,18 @@ function initObservers() {
                             index %= whyTiles.length;
                             console.log('next');
                         }, 2000);
-                        console.log('shown')
                     } else if (timer) {
                         clearInterval(timer);
                         timer = null;
-                        console.log('hidden');
                     }
-                }
-                );
-            });
+                })
+            };
+
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(idleCallback);
+            } else {
+                idleCallback();
+            }
         },
         {
             root: null,
