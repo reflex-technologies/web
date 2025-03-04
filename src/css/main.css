@@ -89,7 +89,8 @@ h2 {
     padding: 5rem 0 0 0;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     background: transparent;
     border: 1px solid var(--ui-on-background-dim);
     border-radius: 100vmax;
