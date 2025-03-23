@@ -170,6 +170,7 @@ input[type=email] {
     display: flex;
     flex-direction: column;
     width: clamp(300px, 28%, 32vw);
+    align-self: start;
 }
 
 .feature-img-tile h4 {
