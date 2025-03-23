@@ -14,7 +14,8 @@ function initCarouselObserver() {
                 entries.forEach((e) => {
                     if (e.isIntersecting) {
                         timer = setInterval(() => {
-                            whyTiles[index].scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+                            whyTiles[index].scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest', left: -100 });
+                            document.body.scrollLeft = 0;
                             index++;
                             index %= whyTiles.length;
                         }, 2500);
