@@ -79,10 +79,8 @@ function clickTabbar(target, name, scroll = true) {
 
     target.classList.add('tab-bar-active');
 
-    if (scroll && name != 'Why')
+    if (scroll)
         document.getElementById(name).scrollIntoView({ behavior: 'smooth', block: 'start' });
-    else if (scroll)
-        document.body.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' });
 }
 
 
