@@ -3,9 +3,6 @@ import Benefits from "./components/Benefits";
 import Button from "./components/Button"
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Collaboration from "./components/Collaboration"
-import Roadmap from "./components/Roadmap";
-import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 const App = () => {
 
@@ -15,9 +12,6 @@ const App = () => {
         <Header />
         <Hero />
         <Benefits />
-        <Pricing />
-        <Collaboration />
-        <Roadmap />
         <Footer />
       </div>
       <ButtonGradiant/>

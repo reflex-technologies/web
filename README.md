@@ -11,7 +11,8 @@ To view on localhost, run `npm run dev`
 
 Install Dependencies: 
 
-1. `npm install react-router-dom`
-2. `npm install -D tailwindcss postcss autoprefixer`
-3. `npm install scroll-lock`
-4. `npm install react-just-parallax`
+1. `npm install`
+2. `npm install react-router-dom`
+3. `npm install -D tailwindcss postcss autoprefixer`
+4. `npm install scroll-lock`
+5. `npm install react-just-parallax`
