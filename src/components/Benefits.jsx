@@ -7,12 +7,15 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="whyus" crosses className="!px-0 !py-10">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Insert title for benefit info here"
+          title="Why should you choose Reflex?"
         />
+        <p className="body-1 max-w-3xl mx-auto mb-6 text-n-5 lg:mb-8">
+        We give you the confidence to push your limits, the clarity to track your progress, and the control to train smarter every day.
+        </p>
 
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
