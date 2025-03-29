@@ -24,8 +24,8 @@ import {
     },
     {
       id: "3",
-      title: "Join Now",
-      url: "#join",
+      title: "About",
+      url: "#about",
     },
   ];
   

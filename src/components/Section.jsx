@@ -11,6 +11,9 @@ const Section = ({
 }) => {
   return (
     <div
+      style={{
+        backgroundImage: `url(${backgound})`,
+      }}
       id={id}
       className={`
       relative 
