@@ -12,6 +12,14 @@
     --font-grotesk: "Space Grotesk", sans-serif;
 }
 
+.home-wrapper {
+    background-image: url("./assets/hero/home-model.png");
+    background-position: center;
+    background-size:cover;
+    height: 100%;
+    container: 1;
+}
+
 * {
     scroll-behavior: smooth;
 }

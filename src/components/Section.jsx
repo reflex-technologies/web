@@ -7,6 +7,7 @@ const Section = ({
   crossesOffset,
   customPaddings,
   children,
+  backgound
 }) => {
   return (
     <div
