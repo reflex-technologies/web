@@ -10,22 +10,22 @@ import {
     {
       id: "0",
       title: "Home",
-      url: "#home",
+      url: "/#home",
     },
     {
       id: "1",
       title: "Features",
-      url: "#features",
+      url: "/#features",
     },
     {
       id: "2",
       title: "Why Us",
-      url: "#whyus",
+      url: "/#whyus",
     },
     {
       id: "3",
-      title: "About",
-      url: "#about",
+      title: "Join Now",
+      url: "/#join",
     },
   ];
   

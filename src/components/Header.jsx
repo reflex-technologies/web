@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#home">
+        <a className="block w-[12rem] xl:mr-8" href="/#home">
           <img src={logo} width={190} height={40} alt="Reflex" />
         </a>
 
@@ -71,8 +71,8 @@ const Header = () => {
           Contact Us
         </Button>
 
-        <Button className="hidden lg:flex" white={true} href="#join">
-          Join Now
+        <Button className="hidden lg:flex" white={true} href="/about">
+          About
         </Button>
 
         <Button
