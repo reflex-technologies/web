@@ -4,7 +4,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { logo } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
-import MenuSvg from "../assets/svg/MenuSvg";
+import MenuSvg from "../assets/MenuSvg.svg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
@@ -79,8 +79,9 @@ const Header = () => {
           className="ml-auto lg:hidden"
           px="px-3"
           onClick={toggleNavigation}
+          white={true}
         >
-          <MenuSvg openNavigation={openNavigation} />
+          <img  src={MenuSvg} height={20} width={20} openNavigation={openNavigation} />
         </Button>
       </div>
     </div>
