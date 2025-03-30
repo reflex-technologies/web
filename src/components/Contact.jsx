@@ -1,10 +1,17 @@
 import React from 'react'
 import Button from "./Button";
+import Section from "./Section"
+import Heading from "./Heading";
 
 const Contact = () => {
     return (
+    <Section  crosses className="!px-0 !py-24">
+          <Heading
+            className="md:max-w-md lg:max-w-2xl text-center"
+            title="Contact Us"
+          />
         <form className="flex min-h-0 grow flex-col" action="">
-        <div className="flex-1 space-y-28 mt-28 p-6 ">
+        <div className="flex-1 space-y-16 mt-6 p-6 ml-10 mr-10">
             <div className="space-y-4">
                 <div className="space-y-1">
                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":rf:-form-item">Your Name</label>
@@ -31,7 +38,8 @@ const Contact = () => {
             </section>
         </div>
         </form>
-        
+        </Section>
+
     )
 }
 

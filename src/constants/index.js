@@ -21,12 +21,7 @@ import {
       id: "2",
       title: "Why Us",
       url: "/#whyus",
-    },
-    {
-      id: "3",
-      title: "Join Now",
-      url: "/#join",
-    },
+    }
   ];
   
   export const features = [

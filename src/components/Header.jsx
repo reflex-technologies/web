@@ -67,12 +67,8 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <Button className="hidden lg:flex mr-4" white={true} href="/contact">
-          Contact Us
-        </Button>
-
-        <Button className="hidden lg:flex" white={true} href="/about">
-          About
+        <Button className="hidden lg:flex mr-4" white={true} href="/#join">
+          Join Now
         </Button>
 
         <Button
