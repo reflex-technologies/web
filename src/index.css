@@ -20,6 +20,17 @@
     container: 1;
 }
 
+.join_wrapper_left {
+    max-width: 40%;
+    align-items: start;
+    margin-left: 10;
+}
+
+.join_wrapper_right {
+    max-width: 40%;
+    align-items: end;
+}
+
 * {
     scroll-behavior: smooth;
 }

@@ -5,7 +5,7 @@ import { socials } from "../constants";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10">
+    <Section id="footer" crosses className="!px-0 !py-10">
       <div className="text-center">
       <Button className="lg:flex mr-4" white={true} href="/contact">
           Contact Us
