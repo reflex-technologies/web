@@ -14,13 +14,13 @@ const Hero = () => {
       customPaddings
       id="home"
       backgound={ homeModel }
-      backgoundClassName="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+      backgoundClassName=" w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
     >
 
     
-      <div className="container relative back " ref={parallaxRef}>
+      <div className="container relative back h-[50rem] text-center">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6">
+          <h1 className="h1 mb-6 mt-40">
             Unlock the Potential Within {` `}
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-5 lg:mb-8">
