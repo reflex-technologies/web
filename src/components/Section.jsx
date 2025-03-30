@@ -14,6 +14,9 @@ const Section = ({
     <div
       style={{
         backgroundImage: `url(${backgound})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
       id={id}
       className={`
