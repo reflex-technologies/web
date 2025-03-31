@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <Section id="footer" crosses className="!px-0 !py-10">
       <div className="text-center">
-      <Button className="lg:flex mr-4" white={true} href="/contact">
+      <Button className="lg:flex mr-4" href="/contact">
           Contact Us
       </Button>
       </div>
       <div className="text-center">
-      <Button className="lg:flex mr-4" white={true} href="/about">
+      <Button className="lg:flex mr-4" href="/about">
           About
       </Button>
       </div>

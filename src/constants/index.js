@@ -21,6 +21,12 @@ import {
       id: "2",
       title: "Why Us",
       url: "/#whyus",
+    },
+    {
+      id: "3",
+      title: "Join Now",
+      url: "/#join",
+      onlyMobile: true
     }
   ];
   
@@ -61,27 +67,22 @@ import {
     {
       id: "2",
       title: "Cutting Edge",
-      text: "We use the technology of tomorrow to get you results today",
+      text: "Here at ReFlex we use the technology of tomorrow to get you results today",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
     },
     {
       id: "3",
       title: "Affordable",
-      text: "Unlock unlimited potential for an accessible price",
+      text: "With ReFlex, unlock unlimited potential in your fitness journey for an accessible price",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
     },
     {
       id: "4",
       title: "High Quality",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      text: "Made by gym lovers, for gym lovers. ReFlex's mission puts the weightlifting and fitness community first",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
     },
-    {
-      id: "5",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./src/assets/benefits/card-1.svg",
-    },
+
   ];
   
   export const socials = [

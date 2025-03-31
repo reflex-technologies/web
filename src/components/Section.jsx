@@ -17,6 +17,7 @@ const Section = ({
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        backgroundColor: "#eaeaea"
       }}
       id={id}
       className={`
