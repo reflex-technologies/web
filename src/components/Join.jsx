@@ -11,7 +11,7 @@ const Join = () => {
                 <img src={webModel} alt="" />
             </div>
             <div className='text-center mt-8'>
-                <h3 className=''>
+                <h3 className='body-1'>
                     Hey there, Sign up to learn more!
                 </h3>
                 <div className='text-center'>

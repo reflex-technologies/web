@@ -4,15 +4,12 @@ import Section from "./Section";
 
 const Features = () => {
     return (
-      <Section id="features" crosses className="!px-0 !py-10">
+      <Section id="features" crosses className="!px-0 !py-10" backgroundCustomColor="#eaeaea">
         <div className="container relative z-2 mt-10">
           <Heading
             className="md:max-w-md lg:max-w-2xl text-center"
-            title="Why should you choose Reflex?"
-          />
-          <p className="body-1 max-w-3xl mx-auto mb-10 text-n-5 lg:mb-8 text-center">
-          We give you the confidence to push your limits, the clarity to track your progress, and the control to train smarter every day.
-          </p>
+            title="New Platform Features"
+          /><br />
   
           <div className="flex flex-wrap gap-10 mb-10 mx-auto text-center">
             {features.map((item) => (

@@ -5,14 +5,14 @@ import { socials } from "../constants";
 
 const Footer = () => {
   return (
-    <Section id="footer" crosses className="!px-0 !py-10">
+    <Section id="footer" crosses className="!px-0 !py-10" backgroundCustomColor="#102437">
       <div className="text-center">
-      <Button className="lg:flex mr-4" href="/contact">
+      <Button className="lg:flex mr-4" href="/contact" textWhite={true}>
           Contact Us
       </Button>
       </div>
       <div className="text-center">
-      <Button className="lg:flex mr-4" href="/about">
+      <Button className="lg:flex mr-4" href="/about" textWhite={true}>
           About
       </Button>
       </div>

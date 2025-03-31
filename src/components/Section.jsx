@@ -8,7 +8,8 @@ const Section = ({
   customPaddings,
   children,
   backgound,
-  backgoundClassName
+  backgoundClassName,
+  backgroundCustomColor
 }) => {
   return (
     <div
@@ -17,7 +18,7 @@ const Section = ({
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        backgroundColor: "#eaeaea"
+        backgroundColor: `${backgroundCustomColor}`
       }}
       id={id}
       className={`

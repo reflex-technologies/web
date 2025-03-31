@@ -4,7 +4,7 @@ import Section from "./Section"
 
 const About = () => {
   return (
-    <Section crosses className="!px-0 !py-10">
+    <Section crosses className="!px-0 !py-10" backgroundCustomColor="#eaeaea">
       <div>
         <div className="container relative z-2 mt-20">
           <Heading

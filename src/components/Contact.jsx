@@ -5,7 +5,7 @@ import Heading from "./Heading";
 
 const Contact = () => {
     return (
-    <Section  crosses className="!px-0 !py-24">
+    <Section  crosses className="!px-0 !py-24" backgroundCustomColor="#eaeaea">
           <Heading
             className="md:max-w-md lg:max-w-2xl text-center"
             title="Contact Us"

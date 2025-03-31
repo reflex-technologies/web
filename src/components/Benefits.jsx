@@ -6,7 +6,7 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
-    <Section id="whyus" crosses className="!px-0 !py-10">
+    <Section id="whyus" crosses className="!px-0 !py-10" backgroundCustomColor="#eaeaea">
       <div className="container relative z-2 mt-10">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
