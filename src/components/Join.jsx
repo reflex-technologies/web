@@ -5,7 +5,7 @@ import { webModel } from '../assets'
 
 const Join = () => {
   return (
-    <Section id="join" crosses className="!px-0 !py-10">
+    <Section id="join" crosses className="!px-0 !py-10" backgroundCustomColor="#eaeaea">
         <div className='mt-14'>
             <div className='relative flex p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[48rem] mx-auto center' >
                 <img src={webModel} alt="" />
